@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<title>Weed</title>
+
+	<style type="text/css">
+		body{
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			background-image: url("img/desert.gif");
+		}
+	</style>
+</head>
+<body style="height: 100vh;">
+	<div class="all" style="display: flex; height: 100%;">
+		<form style="margin: auto; display: block; <!-- background-color: white -->">
+			<div style="margin-top: -150px">
+				<input type="text" name="login" style="display: block; border-radius: 5px;  margin: auto;">
+				<input type="password" name="password" style="display: block; margin: auto; ;margin-top: 7px; border-radius: 5px;">
+				<input type="button" id="btn" style="display: block; margin: 7px auto; width: 90%; letter-spacing: 1px; border-radius: 8px; outline: none;" value="press de baton">
+				<div style="margin-top: -5px; position: absolute; left: 50%">
+					<div id="error" style="color: red; position: relative; left: -50%"></div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<script type="text/javascript">
+		$(function(){
+			var constLogin = 'Tycep'; var constPassword = 'maxzbl';
+	
+			
+		$('#btn').click(function valid(){
+			var login = $("input[name='login']").val();
+			var password = $("input[name='password']").val();
+
+			if (!login || !password){
+			$("#error").text('Заполните все поля!')
+			}
+			else {
+				if(login == constLogin && password == constPassword){
+					$(location).attr('href', 'lobby.html');
+				}
+				else {
+					$("#error").text('Неправильный логин или пароль!')
+				}
+			}
+		});
+
+		});
+
+		
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:900|Raleway|Source+Sans+Pro');
+body{
+	font-family: "Source Sans Pro";
+}
+
+header{
+	padding: 20px 0;
+}
+
+
+
+.mnu_top{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.mnu_top li
+{
+	display: inline-block;
+	margin: 0 16px;
+}
+
+.inner_mnu_top{
+	display: flex;
+	align-items: center;
+	height: 100%;	
+}
+
+.a_text
+{
+	text-transform: uppercase;
+	color: #506a85;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.a_text:hover{
+	color: #506a85;
+}
+
+.MadeForDesigners{
+	display: flex;
+
+	height: 92.5vh;
+	width: 100%;
+
+	background-image: url("../img/frstScene.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.Mafodes{
+	max-width: 960px;
+	text-align: center;
+	margin: auto;
+}
+
+.Mafodes .bl{
+	transition: all .4s ease;
+}
+
+.Mafodes .bl:hover{
+	box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.23);
+}
+
+h1{
+	font-size: 44px;
+	color: #506a85;
+}
+
+.MadeForDesigners .Mafodes h1{
+	font-size: 56px;
+	font-family: "Lato";
+	font-weight: 50;
+	letter-spacing: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.Mafodes p{
+	font-size: 24px;
+	color: #a3b1bf;
+
+}
+
+.btn{
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+
+	color: #ffffff;
+	background-color: #00bc9c;
+
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 2px 0 0 #00a085;
+
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	max-width: 295px;
+	max-height: 62px;
+	padding: 14px 60px;
+
+	transition: all 1.3s ease;
+}
+
+.btn:hover{
+	background-color: #109CD0;
+	box-shadow: 0 2px 0 0 #1590BE;
+	color: #ffffff;
+}
+
+.BeautifulCleanResponisve{
+	display: flex;
+	padding: 120px 0;
+	/* height: 48vh;
+	width: 100%; */
+}
+
+.Gallery{
+	display: flex;
+	background-color: #f2f5f7;
+	padding: 120px 0;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.Gallery .Mafodes .Mafodes{
+	padding-top: 22px;
+	padding-bottom: 6px;
+
+	box-shadow: 0 2px 0 0 #e6e9ed;
+	background-color: #fff;
+}
+
+.Gallery .Mafodes .Mafodes h1{
+	font-size: 18px;
+
+}
+
+.Gallery .Mafodes .Mafodes p{
+	font-size: 12px;
+
+}
+
+#bottom{
+	display: flex;
+	background-color: #2f4052;
+	padding: 74px 0;
+}
+
+#bottom .Mafodes{
+	text-align: left;
+}
+
+#bottom .Mafodes h1{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 18px;
+	color: #ffff;
+}
+
+#bottom .Mafodes p{
+	font-size: 12px;
+	color: #a3b1bf;
+}
+
+#bottom .bl img{
+	margin-bottom: 5px;
+	margin-right: -10px;
+}
+
+#bottom .bl .img_block{
+	margin-right: -25px;
+}
+
+#bottom .bl_row{
+	margin-right: 10px;
+}
+
+#bottom .bl2 img{
+	margin: 12px 0;
+}
+
+#bottom .btn{
+	font-size: 15px;
+}
+
+#bottom .a_text:after{
+	content: '';
+	display: inline-block;
+	width: 10px;
+	height: 8px;
+	margin-left: 6px;
+
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url("../img/arrow.png");
+}
+
+#bottom .a_text{
+	font-weight: bold;
+	color: #a3b1bf;
+	text-transform: none;
+}
+
+#bottom .block{
+	position: relative;
+	background-color: #4e5c6c;
+	border-radius: 4px;
+	padding: 6px 14px;
+}
+
+#bottom .block input{
+	background: transparent;
+	border: none;
+	color: #a3b1bf;
+	outline: none;
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	width: 65%;
+}
+#bottom .block .btn{
+	letter-spacing: 1px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	padding: 3px 10px;
+	display: block;
+	margin: 0;
+	margin-left: 1px;
+	font-size: 10px;
+}
+
+#section_footer{
+	display: flex;
+	background-color: #283645;
+	padding: 36px 0;
+}
+
+#section_footer .mnu_top{
+	list-style-type: circle;
+}
+
+#section_footer .mnu_top li{
+	display: inline-block;
+	margin: 0;
+}
+
+#section_footer .mnu_top a{
+	text-transform: none;
+	font-size: 12px;
+	color: #707e8c;
+}
+
+#section_footer .mnu_top li > b{
+	display: inline-block;
+	margin: 0 10px;
+}
+
+/*#section_footer .mnu_top li a:after{
+	content: '·';
+	display: inline-block;
+	font-size: 12px;
+	margin: 0 10px;
+}
+
+#section_footer .mnu_top:nth-child(6) a:after{
+	content: '';
+}*/
+
+#section_footer{
+	font-size: 12px;
+	color: #707e8c;
+
+}

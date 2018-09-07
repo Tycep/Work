@@ -1,0 +1,120 @@
+
+@mainColor: white;
+
+body{
+	overflow-y:hidden;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+.center(){
+	// display: block;
+	margin: auto;
+}
+
+
+.logo{
+	height: 100%;
+	display: flex;
+
+	margin-bottom: -20px;
+
+	img{
+		filter: invert(0%);
+		animation: invertion 10s infinite;
+		width: 30%;
+		height: auto;
+		.center();
+		&:hover{cursor: pointer;}
+	}
+}
+
+
+
+#boot{
+	margin: 0;
+	height: 100vh;
+	background-color: @mainColor;
+	animation: backgroundinvertion 10s infinite;
+}
+
+
+#main{
+	position: relative;
+	display: none;
+	height: 100vh;
+	background-color: black;
+	background-image: url("img/wallpaper2.jpg");
+		background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+	.chell{
+		display: none;
+		// height: 100%
+		// width: auto;
+		height: 100%;
+		width: 30%;
+		background-image: url("img/Running chell.png");
+		background-repeat: no-repeat;
+    background-position: bottom;
+	}
+	.glados{
+		// height: 100%
+		// width: auto;
+		position: absolute;
+
+		height: 100%;
+		width: 30%;
+		top: -300px;
+		right: 0;
+		background-image: url("img/Portal_2_glados.png");
+		background-repeat: no-repeat;
+    background-position: top;
+		
+	}
+}
+
+
+@keyframes invertion {
+  0% {
+    filter: invert(100%); 
+  }
+  // 25% { 
+  //   filter: invert(0%);
+  // }
+  50%{
+  	// filter: invert(100%);
+  	filter: invert(0%);
+  }
+  100% {
+  	filter: invert(100%);
+  }  
+}
+
+@keyframes backgroundinvertion{
+	0%{
+		background-color: black;
+	}
+	// 25%{
+	// 	background-color: @mainColor;
+	// }
+	50%{
+		// background-color: black;
+		background-color: @mainColor;
+	}
+	100%{
+		background-color: black;
+	}
+}
+
+// .chell{
+// 	height: 100%;
+// 	position: absolute;
+// 	// img{
+// 	// 	position: absolute;
+// 	// 	top: 0;
+// 	// }
+// }

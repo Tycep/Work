@@ -1,0 +1,42 @@
+.blk{
+  height: 300px;
+  background-color: #10AAD1;
+  margin-top: 20px;
+}
+
+.blk2{
+  height: 620px;
+  background-color: #00FF30;
+}
+
+.resizable {
+  background-color: #29e;
+  border-radius: 1px;
+  padding: 5px;
+  margin: 30px 20px;
+  width: 45%;
+
+  /* This makes things *much* easier */
+  box-sizing: border-box;
+}
+
+.resize-drag {
+  background-color: #29e;
+  color: white;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 30px 20px;
+
+  width: 120px;
+
+  /* This makes things *much* easier */
+  box-sizing: border-box;
+}
+
+.resize-container {
+  display: inline-block;
+  width: 100%;
+  height: 240px;
+}
