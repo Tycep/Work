@@ -1,0 +1,42 @@
+body{
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+}
+#content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 960px;
+    grid-gap: 5px;
+    margin: 0 auto;
+    grid-template-areas:
+    "head head head head"
+    "ass . man man"
+    "nav . man man"
+    "sex sex sex sex"
+    "sex sex sex sex"
+    "foot foot foot foot"
+}
+#content>*{
+    background: #ff419a;
+    padding: 30px;
+}
+header{
+    grid-area: head;
+}
+main{
+    grid-area: man;
+}
+section{
+    grid-area: sex;
+}
+aside{
+    grid-area: ass;
+}
+nav{
+    grid-area: nav;
+}
+footer{
+    grid-area: foot;
+}

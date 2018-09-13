@@ -3,15 +3,22 @@
 	padding: 0;
 }
 body{
-	background-color: #CBCBCB !important;
+	background-color: #fff !important;
 }
 
-/*.navigation .navbar .navbar-brand{
-	height:50px;
+h4{
+	font-size: 1.1em !important;
 }
-.navigation .navbar-toggle{
-	height:50px;
-}*/
+h3{
+	font-size: 1.6em !important;
+}
+h2{
+	font-size: 2em !important;
+}
+h1{
+	font-size: 70px;
+}
+
 .navigation .logo{
 	width: 40px;
 }
@@ -33,7 +40,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0096', end
 	color: #FFFF9C
 }
 #intro{
-	height: 100vh;
+	height: 95vh;
 }
 
 .sometext{
@@ -44,18 +51,123 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0096', end
 	flex-direction: column;
 }
 
-.btn{
+.mybtn{
+	display: block;
+	width: 10em;
+	height: 2em;
+	line-height: 1em;
+	color: #A90EB4;
+	text-align: center;
+	font-weight: bold;
+	background-color: #ffffff;
+	font-size: 1.4em !important;
+	margin: auto;
 	margin-top: 5%;
-	border-width: medium;
-	border-radius: 0;
-	text-transform: uppercase;
+	border-radius: 8px !important;
 	padding: .5rem 1.1rem;
 	font-size: .9rem;
+	box-shadow: 2px 2px 4px 0 rgba(0, 111, 255, 53);
 }
+.mybtn:hover{
+	text-decoration: none;
+}
+
 
 .sometext .text-center{
 	margin: auto;
-	margin-top: 35%;
 	text-align: center;
 	width: 80%;
 }
+
+.crop{
+	height: 300px;
+	width: 100%;
+	background-image: url('..//img/NewYork.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	/* overflow: hidden; */
+}
+
+#about h2{
+	font-size: 40px !important;
+	padding-top: 4%;
+	margin-bottom: 3%;
+	text-align: center;
+}
+#about .row-wrapper{
+	margin: 2% 2% 2% 2%;
+}
+
+
+.services-wrapper{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f900d0+0,3a3ad4+48,ff0022+100 */
+background: #f900d0; /* Old browsers */
+background: -moz-linear-gradient(45deg, #f900d0 0%, #3a3ad4 48%, #ff0022 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #f900d0 0%,#3a3ad4 48%,#ff0022 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg, #f900d0 0%,#3a3ad4 48%,#ff0022 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f900d0', endColorstr='#ff0022',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+/* #services{
+	padding-top: 3%;
+	padding-bottom: 3%;
+} */
+.mycard{
+	display: flex;
+	margin: auto;
+	text-align: center;
+	height: 220px;
+	width: 220px;
+	background: #FFF;
+	box-shadow: 6px 6px 32px 0 rgba(0, 0, 0, 16);
+	border-radius: 9%;
+}
+.content-wrapper{
+	margin: auto;
+}
+.mycard p{
+	margin: 0;
+}
+
+#services{
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+#services img{
+	display: block;
+	max-width: 20%;
+	margin: 5% auto 5% auto;
+}
+#services .col-md-4{
+	padding-bottom: 3%;
+}
+#services .mybtn{
+	width: 16em;
+	height: 2.7em;
+	color: #0066FF;
+	font-size: 1.2em !important;
+	border-radius: 25px !important;
+	box-shadow: 1px 1px 30px 0 rgba(255, 0, 238, 53);
+	margin-top: 4%;
+}
+#services .mybtn:hover{
+	text-decoration: none;
+	color: #A90EB4;
+}
+
+
+/* 
+.mycard{
+	margin: auto;
+	background: #ffffff;
+	width: 100%;
+	height: 100%;
+	border-radius: 10%;
+} */
+
+/* Testimonials injection */
+/* .card{
+	margin: 2rem;
+} */
+/* End of Testimonials injection */

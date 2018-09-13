@@ -1,0 +1,63 @@
+body{
+    color: #000;
+    background: #464646;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 960px;
+    grid-gap: 6px;
+    margin: 0 auto;
+    grid-template-areas:
+    "head head head head"
+    "foot foot foot foot"
+    "man man man man"
+    "man man man man"
+    "ass ass nav nav"
+    "sex sex sex sex"
+    "sex sex sex sex";
+}
+
+@media screen and (min-width: 760px){
+    #content{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        max-width: 960px;
+        grid-gap: 6px;
+        margin: 0 auto;
+        grid-template-areas:
+        "head head head head"
+        "ass ass man man"
+        "nav nav man man"
+        "sex sex sex sex"
+        "sex sex sex sex"
+        "foot foot foot foot"
+    }
+}
+#content>*{
+    background: #36ffcd;
+    padding: 30px;
+}
+header{
+    grid-area: head;
+}
+main{
+    grid-area: man;
+}
+section{
+    grid-area: sex;
+}
+aside{
+    grid-area: ass;
+}
+nav{
+    grid-area: nav;
+}
+footer{
+    grid-area: foot;
+}
